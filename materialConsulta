@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores simples</title>
+    <!--<link rel="stylesheet" type="text/css" href="exemploSeletores.css" media="screen">-->
+    <style>
+       /* *{
+            text-shadow: 2px 2px 5px red;
+        }*/
+        p {
+            color: blue;
+            text-align: center;
+        }
+
+        #id1 {
+            font-weight: bold;
+            color: brown;
+        }
+
+        .class1 {
+            background-color: yellowgreen;
+        }
+
+        h2.class1 {
+            font-style: italic;
+            text-align: right;
+        }
+
+        h3.center {
+            text-align: center;
+            color: red;
+        }
+
+        h3.large {
+            font-size: 300%;
+        }
+        h4, h5, h6{
+            background-color: bisque;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <p>Tag 'p' vai receber a mesma estilização</p>
+    <p>Outra tag p</p>
+    <p id="id1">Esta tag também é p mas está estilizada por meio do id. Ela herda as mesmas características de p mas
+        muda de acordo com as características atribuídas ao id</p>
+    <h1 class="class1">Estilização pela classe tag H1</h1>
+    <p class="class1">Estilização pela classe tag p</p>
+    <h2 class="class1">Estilização pela classe mas especificamente para o elemento h2</h2>
+    <h3 class="center">Esta linha é vermelha e alinhada ao centro</h3>
+    <h3 class="center large">Esta linha será vermelha, alinhada ao centro e com letras grandes</h3>
+    <h4>Vou receber a mesma estilização que h5 e h6</h4>
+    <h5>Vou receber a mesma estilização que h4 e h6</h5>
+    <h6>Vou receber a mesma estilização que h4 e h5</h6>
+    
+</body>
+
+</html>
